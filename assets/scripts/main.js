@@ -1,5 +1,5 @@
 async function loadModel() {
-    const model = await tf.loadLayersModel('https://username.github.io/ai-repo/assets/model/model.json');
+    const model = await tf.loadLayersModel('https://praveenbabuspb.github.io/test/assets/model/model.json');
     return model;
   }
   
