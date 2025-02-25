@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Quiz Bot</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <script src="assets/scripts/main.js" defer></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    #quiz-container {
+      margin-top: 20px;
+    }
+    .option {
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>AI Quiz Bot</h1>
+  <input type="text" id="topic-input" placeholder="Enter a topic (e.g., quadratic equations)">
+  <button onclick="generateQuiz()">Generate Quiz</button>
+
+  <div id="quiz-container">
+    <!-- Quiz will be rendered here -->
+  </div>
+</body>
+</html>
