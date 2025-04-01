@@ -14,7 +14,7 @@ async function generateQuiz() {
 
   const model = await loadModel();
 
-  // Craft a prompt for the model
+  
   const prompt = `
     Generate a quiz question about ${topic}. Provide 4 options (A, B, C, D) and indicate the correct answer.
 
@@ -26,10 +26,10 @@ async function generateQuiz() {
     Answer: A) 2 and 3
   `;
 
-  // Tokenize the input prompt
+ 
   const inputTensor = tf.tensor([prompt.split('').map(char => char.charCodeAt(0))]);
 
-  // Generate response
+ 
   const outputTensor = model.predict(inputTensor);
   const response = String.fromCharCode(...outputTensor.dataSync());
 
