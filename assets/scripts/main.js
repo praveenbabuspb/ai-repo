@@ -4,7 +4,7 @@ async function loadModel() {
 }
 
 async function generateQuiz() {
-  // Get the user's input topic
+  
   const topic = document.getElementById('topic-input').value;
 
   if (!topic) {
